@@ -1,7 +1,5 @@
 # Bring in deps
 import os 
-st.secrets("apikey")
-
 import streamlit as st 
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
@@ -10,6 +8,8 @@ from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper 
 
 os.environ['OPENAI_API_KEY'] = apikey
+
+st.secrets("apikey")
 
 # App framework
 st.title('🖤ARCH AI')
