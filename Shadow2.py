@@ -1,5 +1,4 @@
 # Bring in deps
-import os 
 import streamlit as st  
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
@@ -9,7 +8,6 @@ from langchain.utilities import WikipediaAPIWrapper
 
 st.secrets("apikey")
 
-os.environ['OPENAI_API_KEY'] = apikey
 
 # App framework
 st.title('🖤ARCH AI')
