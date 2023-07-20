@@ -1,6 +1,7 @@
 # Bring in deps
 import os 
 import streamlit as st 
+import langchain.llms 
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SequentialChain 
