@@ -10,9 +10,6 @@ from langchain.utilities import WikipediaAPIWrapper
 
 st.secrets["apikey"] 
 
-
-os.environ['OPENAI_API_KEY'] = apikey
-
 # App framework
 st.title('🖤ARCH AI')
 prompt = st.text_input('Talk to your shadow') 
