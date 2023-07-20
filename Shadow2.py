@@ -8,7 +8,10 @@ from langchain.chains import LLMChain, SequentialChain
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper 
 
-st.secrets["apikey]
+headers = 
+{
+ "authorization": st.secrets["apikey]
+}
 
 os.environ['OPENAI_API_KEY'] = apikey
 
