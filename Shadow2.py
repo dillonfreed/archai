@@ -6,7 +6,7 @@ from langchain.chains import LLMChain, SequentialChain
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper 
 
-st.Secrets("apikey")
+st.secrets('apikey')
 
 # App framework
 st.title('🖤ARCH AI')
